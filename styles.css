@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(16, 17, 17);
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 50px;
+  color: white;
+}
+.profile {
+  margin: 160px 140px;
+  padding: 120px 50px;
+}
+.socialicons {
+  padding: 30px 10px;
+}
+.socialicons span {
+  padding: 8px;
+}
+.socialicons img:hover {
+  padding: 0px;
+  margin: 0px;
+  width: 105px;
+  height: 105px;
+  /* box-shadow: 1px 1px 5px rgb(56, 52, 50); */
+}
+a {
+  text-decoration: none;
+}
+.profilepicture img {
+  border-radius: 50%;
+  padding: 100px;
+}
