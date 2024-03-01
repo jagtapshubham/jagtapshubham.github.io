@@ -2,6 +2,19 @@
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .socialicons ul li img {
+    width: 30vw;
+    height: 30vw;
+  }
+  .profile .profilepicture img {
+    width: 10vw;
+    height: 10vh;
+  }
+}
 body {
   background-color: rgb(16, 17, 17);
   justify-content: center;
@@ -9,7 +22,7 @@ body {
 .container {
   display: flex;
 }
-h1 {
+.profile h1 {
   font-size: 50px;
   color: white;
   margin: 9px;
@@ -27,12 +40,6 @@ h1 {
 .socialicons ul li {
   list-style: none;
   padding: 9px;
-}
-.socialicons img:hover {
-  padding: 0px;
-  margin: 0px;
-  width: 105px;
-  height: 105px;
 }
 a {
   text-decoration: none;
