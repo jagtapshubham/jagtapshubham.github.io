@@ -11,9 +11,7 @@
   --titlefontfamily: "Open Sans", sans-serif;
   --fontcolor: white;
 }
-body {
-  background-color: rgb(17, 9, 34);
-}
+
 .smallfont {
   font-size: 28px;
 }
@@ -80,15 +78,15 @@ main {
   background-color: rgb(17, 9, 34);
   color: whitesmoke;
 }
-.homecontent {
-  display: flex;
-  flex-direction: column;
-}
 .homeflex {
   display: flex;
   justify-content: center;
   align-content: right;
   gap: 300px;
+}
+.homecontent {
+  display: flex;
+  flex-direction: column;
 }
 .myname {
   font-size: 60px;
@@ -115,16 +113,29 @@ main {
   transform: rotate(0deg);
 }
 
-/* Work */
+/* Experience */
+.experience-container {
+  padding: 20px 50px;
+  color: white;
+  background-color: rgb(22, 20, 20);
+}
 
 .experience {
-  border: 2px solid rgb(238, 35, 8);
-  /* background-color: rgb(20, 232, 232); */
+  background-color: rgb(64, 53, 88);
   border-radius: 10px;
   padding: 20px;
   margin: 10px 0px;
 }
-
+.company-name {
+  background-color: rgb(44, 25, 84);
+}
+.experience:hover {
+  background-color: rgb(101, 67, 174);
+}
+.year-flex {
+  display: flex;
+  justify-content: space-between;
+}
 .experience ul {
   padding: 22px;
 }
@@ -227,7 +238,6 @@ main {
     font-weight: 200;
     font-size: 20px;
     padding-left: 25px;
-    /* width: 30vw; */
   }
 
   .homeflex {
@@ -253,6 +263,26 @@ main {
     width: 40px;
     height: 40px;
   }
+
+  /* Experience Section */
+
+  .experience-container {
+    padding: 20px 20px;
+  }
+  .experience-section .experience.company-name h3 {
+    background-color: rgb(44, 25, 84);
+    font-size: 23px;
+  }
+  .experience-section .experience.smallfont .year-flex {
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .experience ul {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
   /* comman component */
   .title {
     font-size: 30px;
