@@ -235,13 +235,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 40px;
-
   }
   .myimage > img {
     border-radius: 30px;
     width: 270px;
     height: 270px;
-    /
   }
 
   /* Contact section on home */
