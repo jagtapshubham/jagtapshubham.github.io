@@ -114,10 +114,12 @@ main {
 }
 
 /* Experience */
-.experience-container {
+.experience-section {
+  background-color: rgb(22, 20, 20);
+}
+.page-container {
   padding: 20px 50px;
   color: white;
-  background-color: rgb(22, 20, 20);
 }
 
 .experience {
@@ -138,6 +140,39 @@ main {
 }
 .experience ul {
   padding: 22px;
+}
+
+/* Skills section */
+
+.skills-section {
+  background-color: rgb(17, 9, 34);
+}
+.skills-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 0px;
+}
+
+.skill-item {
+  background-color: rgb(41, 28, 68);
+  text-align: center;
+  padding: 40px 50px;
+  border-radius: 30px;
+}
+.skill-item:hover {
+  background-color: rgb(96, 53, 181);
+}
+.skill-text {
+  padding-top: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+  font-weight: 800;
+}
+.skill-item img {
+  width: fit-content;
+  height: 100px;
 }
 
 /* Project section */
@@ -266,7 +301,7 @@ main {
 
   /* Experience Section */
 
-  .experience-container {
+  .page-container {
     padding: 20px 20px;
   }
   .experience-section .experience.company-name h3 {
@@ -281,6 +316,29 @@ main {
     padding: 15px;
     font-size: 20px;
     line-height: 29px;
+  }
+
+  /* Skills section */
+
+  .skills-flex {
+    gap: 20px;
+    padding: 25px 0px;
+  }
+  .skill-item {
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 20px;
+  }
+  .skill-text {
+    padding-top: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: large;
+    font-weight: 400;
+  }
+  .skill-item img {
+    width: 50px;
+    height: 50px;
   }
 
   /* comman component */
