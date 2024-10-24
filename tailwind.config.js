@@ -24,9 +24,6 @@ module.exports = {
       animation: {
         "waving-hand": "wave 2s linear infinite",
       },
-      backgroundImage: {
-        "star-pattern": "url('/images/stars.png)",
-      },
     },
   },
   plugins: [],
