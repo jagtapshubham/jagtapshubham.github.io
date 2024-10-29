@@ -31,33 +31,42 @@
           class="hidden sm:flex sm:gap-10 sm:font-mono sm:font-bold sm: text-lg text-white"
         >
           <li class="hover:scale-110">
-            <a href="#AboutMe" class="hover:text-indigo-500 duration-300"
-              >About Me</a
+            <a
+              href="#"
+              data-scroll-to="home"
+              class="hover:text-indigo-500 duration-300"
+              >Home</a
             >
           </li>
           <li class="hover:scale-110">
-            <a href="#Experience" class="hover:text-indigo-500 duration-300"
+            <a
+              href="#"
+              class="hover:text-indigo-500 duration-300"
+              data-scroll-to="about"
+              >About</a
+            >
+          </li>
+          <li class="hover:scale-110">
+            <a
+              href="#"
+              data-scroll-to="experience"
+              class="hover:text-indigo-500 duration-300"
               >Experience</a
             >
           </li>
           <li class="hover:scale-110">
-            <a href="#Projects" class="hover:text-indigo-500 duration-300"
+            <a
+              href="#"
+              data-scroll-to="projects"
+              class="hover:text-indigo-500 duration-300"
               >Projects</a
-            >
-          </li>
-          <li class="hover:scale-110">
-            <a href="#Skills" class="hover:text-indigo-500 duration-300"
-              >Skills</a
             >
           </li>
         </ul>
       </div>
     </nav>
     <main class="overflow-x-hidden">
-      <section
-        class="bg-gradient-to-r from-darkblue to-violet-950"
-        id="AboutMe"
-      >
+      <section class="bg-gradient-to-r from-darkblue to-violet-950" id="home">
         <div
           class="text-white flex-row items-center justify-center sm:flex sm:flex-row sm:justify-around"
         >
@@ -141,10 +150,7 @@
           </div>
         </div>
       </section>
-      <section
-        class="bg-gradient-to-r from-slate-950 to-slate-800"
-        id="Introduction"
-      >
+      <section class="bg-gradient-to-r from-slate-950 to-slate-800" id="about">
         <div class="text-white p-5">
           <div class="text-4xl font-semibold py-5">My Introduction</div>
           <div class="sm:flex items-center sm:px-5 sm:py-0 py-3">
@@ -170,7 +176,7 @@
       </section>
       <section
         class="bg-gradient-to-r from-darkblue to-violet-950"
-        id="Experience"
+        id="experience"
       >
         <div class="text-white p-5">
           <div class="text-4xl py-5 font-semibold">My Experience</div>
@@ -180,14 +186,14 @@
               class="bg-violet-950 text-lg rounded-md p-4 my-3 sm:font-poppins"
             >
               <div
-                class="flex justify-between items-center font-medium text-xl pb-6"
+                class="flex justify-between items-center font-medium text-xl"
                 id="SearsFrontEnd"
               >
                 <h3>FrontEnd Developer</h3>
-                <div class="text-right">(2021 - 2024)</div>
-                <!-- <img src="/images/down.png" width="40px" height="10px" /> -->
+                <img src="/images/down.png" width="40px" height="10px" />
               </div>
-              <ul class="list-disc pl-5">
+              <ul class="list-disc pl-5 hidden">
+                <div class="text-right">(2021 - 2024)</div>
                 <li>
                   Implemented a feature in the HomeWarrantyPlansPage to trigger
                   the 'shsGlobal' event when plans are loaded, adding attributes
@@ -235,8 +241,8 @@
                 </li>
               </ul>
             </div>
-            <!-- <div
-              class="bg-violet-950 text-xl rounded-md p-4 my-3 sm:font-poppins"
+            <div
+              class="bg-violet-950 text-lg rounded-md p-4 my-3 sm:font-poppins"
             >
               <div
                 class="flex justify-between items-center font-medium text-xl"
@@ -264,14 +270,14 @@
                   for conducting unit, functional, flow test cases.
                 </li>
               </ul>
-            </div> -->
+            </div>
           </div>
         </div>
       </section>
 
       <section
         class="bg-gradient-to-r from-slate-950 to-slate-800"
-        id="Projects"
+        id="projects"
       >
         <div class="text-white p-5">
           <div class="text-4xl py-5 font-semibold">Projects</div>
@@ -352,7 +358,7 @@
         </div>
       </section>
 
-      <section class="bg-gradient-to-r from-slate-950 to-slate-800" id="Skills">
+      <section class="bg-gradient-to-r from-slate-950 to-slate-800" id="skills">
         <div class="text-white p-5">
           <div class="text-4xl py-5 font-semibold">My Skills</div>
           <div class="flex justify-evenly flex-wrap gap-3 py-12">
