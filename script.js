@@ -18,6 +18,16 @@ const toggleQaExperience = () => {
 };
 searsQaExperience.addEventListener("click", toggleQaExperience);
 
+/* QA List */
+const mphatekQaExperience = document.getElementById("mphatekQa");
+const mphatekqaListExperience = mphatekQaExperience.nextElementSibling;
+
+const togglemphatekQaExperience = () => {
+  mphatekqaListExperience.classList.toggle("hidden");
+  mphatekQaExperience.lastElementChild.classList.toggle("rotate-180");
+};
+mphatekQaExperience.addEventListener("click", togglemphatekQaExperience);
+
 /* Removing # from url when nav links are clicked */
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", (event) => {
