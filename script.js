@@ -28,6 +28,16 @@ const togglemphatekQaExperience = () => {
 };
 mphatekQaExperience.addEventListener("click", togglemphatekQaExperience);
 
+/* QA List */
+const tudipQaExperience = document.getElementById("tudipQa");
+const tudipqaListExperience = tudipQaExperience.nextElementSibling;
+
+const toggletudipQaExperience = () => {
+  tudipqaListExperience.classList.toggle("hidden");
+  tudipQaExperience.lastElementChild.classList.toggle("rotate-180");
+};
+tudipQaExperience.addEventListener("click", toggletudipQaExperience);
+
 /* Removing # from url when nav links are clicked */
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", (event) => {
